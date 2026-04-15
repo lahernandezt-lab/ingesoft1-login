@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ingesoft1_login',
+        'NAME': 'ingesoft1_db',
         'USER': 'ingesoft1_user',
         'PASSWORD': '123456',
         'HOST': 'localhost',
