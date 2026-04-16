@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <form class="form" @submit.prevent="handleSubmit">
-      
+
       <h2>Login</h2>
 
       <input
@@ -53,8 +53,8 @@ export default {
       const result = await authService.login(this.correo, this.password);
 
       if (result.success) {
-        //  Emitir evento
-        this.$emit("login-success", result.secret_phrase);
+        // 🔥 CORRECCIÓN IMPORTANTE
+        this.$emit("login-success", result.data.secret_phrase);
       } else {
         this.errorMessage = result.message;
       }
